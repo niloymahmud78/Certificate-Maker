@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Galada&family=Noto+Sans+Bengali:wght@200;300;400;500;600;700;800;900&family=Open+Sans:wght@400;500;700&family=Oswald:wght@500;700&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Noto Sans Bengali', sans-serif;
+}
+
+body {
+	font-family: 'Noto Sans Bengali', sans-serif;
+}
+
+.appbox {
+	border: 2px solid black;
+	height: 800px;
+	width: 500px;
+	padding: 15px;
+	overflow: hidden;
+	background: teal;
+}
+
+.maintitle {
+	font-size: 50px;
+	text-align: center;
+	color: rgb(28, 26, 26);
+	max-height: 100px;
+	min-height: 100px;
+	font-family: 'Galada', cursive;
+	text-shadow: 1px 1px 2px;
+}
+
+.logo {
+	max-width: 164px;
+	min-width: 164px;
+	max-height: 164px;
+	min-height: 164px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: 0;
+	padding: 0px;
+}
+
+#displayImage {
+	max-width: 160px;
+	min-width: 160px;
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	min-height: 160px !important;
+}
+
+.mainSlogan {
+	text-align: center;
+	font-size: 24px;
+	color: #fff;
+	font-weight: bold;
+	transform: translateY(160%);
+	text-shadow: 1px 1px 2px black;
+	font-family: 'Galada', cursive;
+}
+
+.certificateTitle p {
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	background: #23239f;
+	border: 2px solid white;
+	padding: 5px 10px;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.certificate h4 {
+	color: white;
+	background: #00000065;
+	text-align: center;
+	text-shadow: 2px 2px 2px black;
+	border: 2px solid #333;
+	padding: 3px;
+	font-weight: bold;
+	width: 144px;
+	border-radius: 27px;
+	display: inline-block;
+	font-size: 19px;
+}
+
+.profile {
+	max-width: 130px;
+	min-width: 130px;
+	max-height: 130px;
+	min-height: 130px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	transform: translateY(25%);
+}
+
+.profile img {
+	max-width: 130px;
+	min-width: 130px;
+	border-radius: 50%;
+}
+
+.appBody .mainPoint {
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	transform: translateY(25%);
+}
+
+.appBody .poetryName {
+	font-size: 20px;
+	color: white;
+	font-weight: bold;
+	text-shadow: 2px 2px 2px #333;
+	padding: 8px 0;
+	overflow: hidden;
+}
+
+#downBtn {
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	background: #4e50c1;
+	padding: 5px 10px;
+	border-radius: 10px;
+	margin-top: 30px;
+	display: inline-block;
+	transition: 1s;
+	border: 1px solid #4e50c1;
+}
+
+#downBtn:hover {
+	text-decoration: none;
+	font-size: 25px;
+	color: #4e50c1;
+	background: white;
+	padding: 5px 20px;
+	border-radius: 30px;
+}
+
+.footer {
+	background: #0000008c;
+	color: #fff;
+	border: 2px solid white;
+	border-radius: 15px;
+}
+
+.footer p {
+	margin: 0;
+	padding: 5px;
+}
+
+
+
+
+/* Form Section */
+form {
+	display: table-caption;
+}
+
+label {
+	padding: 8px 0;
+	font-size: 20px;
+}
+
+input {
+	font-family: revert-layer;
+	font-weight: 300;
+	padding: 0 10px;
+}

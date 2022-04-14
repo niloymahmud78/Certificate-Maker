@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Maker | By NiloyMahmud</title>
+
+    <!-- Links -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ====================== Certificate Body Section ====================== -->
+    <section id="app">
+        <div class="container mt-5 mb-5">
+            <div class="row">
+                <div class="col-sm-12 col-lg-6">
+                    <div class="appbox" id="divBody">
+                        <!-- \\\\\\\\\\\\\\ App Header Section ////////////// -->
+                        <h6 class="text-center"
+                            style="color: aliceblue; font-weight: bold; text-shadow: 1px 1px 1px black; text-justify: distribute;">
+                            "পরম করুণাময়ের নামে"</h6>
+                        <div class="maintitle">
+                            {{ mainTitle }}
+                        </div>
+
+                        <div class="row mt-0">
+                            <div class="col-sm-4">
+                                <div class="logo w-100" id="displayImage">
+
+                                </div>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="mainSlogan">
+                                    {{ mainSlogan }}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="certificateTitle mt-3">
+                            <p>দৈনিক ভালোলাগা কবিতা ও কবি</p>
+                        </div>
+
+                        <div class="certificate text-center mt-3">
+                            <h4>সম্মাননা সনদ</h4>
+                        </div>
+
+                        <!-- \\\\\\\\\\\\\\ App Body Section ////////////// -->
+                        <div class="appBody row">
+                            <div class="col-sm-8 mainPoint">
+                                <div class="poetryName">কবিতাঃ {{ poetryName }}</div>
+                                <div class="poetName">কবিঃ {{ poetName }}</div>
+                                <div class="dateSelect">তারিখঃ {{ date }}</div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="profile" id="displayProfile">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- \\\\\\\\\\\\\\ App Footer Section ////////////// -->
+
+                        <div class="congrats mt-5 text-center">
+                            <article style="font-weight: 600; color: black;">প্রতিষ্ঠাতা, প্রধান উপদেষ্টা এবং
+                                এডমিনগণদের পক্ষথেকে ভালোলাগা কবিতার প্রিয় কবিকে আন্তরিক শুভেচ্ছা ও অভিনন্দন</article>
+                        </div>
+                        <div class="certificate text-center mt-2">
+                            <h4>শুভেচ্ছান্তে</h4>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="text-center footer">
+                                    <p>প্রতিষ্ঠাতা</p>
+                                    <p>এন.এইচ.বিপ্লব চৌধুরী</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="text-center footer">
+                                    <p>প্রধান সমন্বয়কারী</p>
+                                    <p>{{ adjust }}</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================== Form Filling Section =========================== -->
+                <div class="col-sm-12 col-lg-6">
+                    <div class="appform">
+                        <form action="#">
+                            <label for="mainTitle">গ্রুপের নাম লিখুন
+                                <input type="text" placeholder="গ্রুপের নাম লিখুন" v-model="mainTitle">
+                            </label>
+                            <label for="mainlogo">গ্রুপের লোগো আপলোড করুন
+                                <input type="file" id="imageInput"  accept="image/png, image/jpeg">
+                            </label>
+                            <label for="mainSlogan">গ্রুপের স্লোগান লিখুন
+                                <input type="text" placeholder="গ্রুপের স্লোগান লিখুন" v-model="mainSlogan">
+                            </label>
+                            <label for="poetryName">কবিতার নাম লিখুন
+                                <input type="text" placeholder="কবিতার নাম লিখুন" v-model="poetryName">
+                            </label>
+                            <label for="poetName">কবির নাম লিখুন
+                                <input type="text" placeholder="কবির নাম লিখুন" v-model="poetName">
+                            </label>
+                            <label for="date">তারিখ লিখুন
+                                <input type="text" placeholder="তারিখ লিখুন" v-model="date">
+                            </label>
+                            <label for="profile">ছবি আপলোড করুন
+                                <input type="file" id="profileInput"  accept="image/png, image/jpeg">
+                            </label>
+                            <label for="adjust">প্রধান সমন্বয়কারীর নাম লিখুন
+                                <input type="text" placeholder="প্রধান সমন্বয়কারীর নাম লিখুন" v-model="adjust">
+                            </label>
+                        </form>
+                    </div>
+                    <p class="mt-5 mb-0">সার্টিফিকেট ডাউনলোড করতে নিচের বাটন এ ক্লিক করুন <br><i
+                            class="fas fa-chevron-down" style="font-size: 30px;"></i></p>
+
+                    <button id="downBtn" class="downbtn">Download Certificate <i class="fas fa-download"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center">
+        <p>Copyright Claim 2022 | Created By <a href="https://www.facebook.com/niloy.mahmud.72">Niloy Mahmud</a></p>
+    </footer>
+
+
+
+
+
+    <!-- JS Links -->
+    <script src="js/jquery-3.6.0.slim.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/dom-to-image.min.js"></script>
+    <script src="js/FileSaver.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#downBtn").click(function () {
+                domtoimage.toBlob(document.getElementById("divBody")).then(function (blob) {
+                    window.saveAs(blob, "output.png")
+                })
+            })
+        })
+    </script>
+</body>
+
+</html>
