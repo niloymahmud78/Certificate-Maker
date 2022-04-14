@@ -12,13 +12,22 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body onload="startTime()">
+    <section>
+        <!-- Date and time Clock -->
+    <div id="clockdate">
+        <div class="clockdate-wrapper">
+          <div id="clock"></div>
+          <div id="date"></div>
+        </div>
+      </div>
+    </section>
 
     <!-- ====================== Certificate Body Section ====================== -->
     <section id="app">
         <div class="container mt-5 mb-5">
             <div class="row">
-                <div class="col-sm-12 col-lg-6">
+                <div class="col-sm-12">
                     <div class="appbox" id="divBody">
                         <!-- \\\\\\\\\\\\\\ App Header Section ////////////// -->
                         <h6 class="text-center"
@@ -74,13 +83,13 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-lg-6">
+                            <div class="col-sm-6">
                                 <div class="text-center footer">
                                     <p>প্রতিষ্ঠাতা</p>
                                     <p>এন.এইচ.বিপ্লব চৌধুরী</p>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-sm-6">
                                 <div class="text-center footer">
                                     <p>প্রধান সমন্বয়কারী</p>
                                     <p>{{ adjust }}</p>
@@ -95,7 +104,7 @@
 
 
                 <!-- =========================== Form Filling Section =========================== -->
-                <div class="col-sm-12 col-lg-6">
+                <div class="col-sm-12">
                     <div class="appform">
                         <form action="#">
                             <label for="mainTitle">গ্রুপের নাম লিখুন
