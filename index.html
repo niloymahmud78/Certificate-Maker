@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Certificate Maker | By NiloyMahmud</title>
+    <link rel="icon" href="img/logo2.png" type="image/png" sizes="400x400">
 
     <!-- Links -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -13,21 +14,54 @@
 </head>
 
 <body onload="startTime()">
-    <section>
-        <!-- Date and time Clock -->
+    <section class="mainSec">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="img/logo2.png" style="width: 120px;"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index-2.html">বিশ্ব সাহিত্য প্রাঙ্গণ</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      View Facebook Groups
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="https://www.facebook.com/groups/187691832985717">বিশ্ব সাহিত্য প্রাঙ্গণ</a></li>
+                      <li><a class="dropdown-item" href="https://www.facebook.com/groups/2342981176003095">বিশ্ব সাহিত্য দর্পণ</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <!-- Date and time Clock -->
     <div id="clockdate">
         <div class="clockdate-wrapper">
           <div id="clock"></div>
           <div id="date"></div>
         </div>
       </div>
+              </div>
+            </div>
+          </nav>
     </section>
+   
+
+
+    <header class="mt-5 text-center">
+        <h3>Welcome To Certificate Maker Site. Fill The Form Click Download Image And See The Magic!!!</h3>
+    </header>
 
     <!-- ====================== Certificate Body Section ====================== -->
     <section id="app">
         <div class="container mt-5 mb-5">
             <div class="row">
-                <div class="col-sm-12">
+                <div class="col-sm-12 col-lg-6">
                     <div class="appbox" id="divBody">
                         <!-- \\\\\\\\\\\\\\ App Header Section ////////////// -->
                         <h6 class="text-center"
@@ -104,7 +138,7 @@
 
 
                 <!-- =========================== Form Filling Section =========================== -->
-                <div class="col-sm-12">
+                <div class="col-sm-12 col-lg-6">
                     <div class="appform">
                         <form action="#">
                             <label for="mainTitle">গ্রুপের নাম লিখুন
@@ -152,6 +186,7 @@
 
     <!-- JS Links -->
     <script src="js/jquery-3.6.0.slim.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>
     <script src="js/vue.js"></script>
     <script src="js/dom-to-image.min.js"></script>

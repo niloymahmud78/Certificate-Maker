@@ -177,8 +177,11 @@ input {
 
 
 /* Clock Css */
+#clockdate {
+	width: 300px;
+}
 .clockdate-wrapper {
-	background-color: #333;
+	background-color: rgba(51, 51, 51, 0);
 	padding: 15px;
 	/* max-width: 350px; */
 	width: 100%;
@@ -186,24 +189,43 @@ input {
 	border-radius: 5px;
 	margin: 0 auto;
 }
-#clock{
-    background-color:#333;
-    font-family: sans-serif;
-    font-size:60px;
-    text-shadow:0px 0px 1px #fff;
-    color:#fff;
+#clock {
+	background-color: rgba(51, 51, 51, 0);
+	font-family: sans-serif;
+	font-size: 35px;
+	text-shadow: 0px 0px 1px #fff;
+	color: #fff;
 }
 #clock span {
     color:#888;
     text-shadow:0px 0px 1px #333;
-    font-size:50px;
     position:relative;
     top:-5px;
-    left:10px;
+    left:5px;
+	font-size: 18px;
 }
 #date {
     letter-spacing:3px;
     font-size:14px;
     font-family:arial,sans-serif;
     color:#fff;
+}
+
+/* Navbar Styling */
+.navbar-dark .navbar-nav .nav-link {
+	color: #fff;
+	font-size: 18px;
+	padding: 0 18px;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+	position: absolute;
+	background: #0009;
+	color: white !important;
+	font-size: 20px;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu li a{
+	color: #fff;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu li a:hover{
+	color: #000;
 }
