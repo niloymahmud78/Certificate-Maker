@@ -113,6 +113,11 @@ body {
 	min-width: 130px;
 	border-radius: 50%;
 }
+.massagePic{
+	padding: 10px 5px;
+	font-size: 18px;
+	color: blue;
+}
 
 .appBody .mainPoint {
 	color: white;
