@@ -11,6 +11,7 @@
     <!-- Links -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-2.css">
 </head>
 
 <body onload="startTime()">
@@ -27,7 +28,7 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="index-3.html">বিশ্ব সাহিত্য দর্পণ</a>
+                    <a class="nav-link" href="index.html">বিশ্ব সাহিত্য প্রাঙ্গণ</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -62,24 +63,24 @@
         <div class="container mt-5 mb-5">
             <div class="row">
                 <div class="col-sm-12 col-lg-6">
-                    <div class="appbox" id="divBody">
+                    <div class="appbox dorponBody" id="divBody">
                         <!-- \\\\\\\\\\\\\\ App Header Section ////////////// -->
                         <h6 class="text-center"
                             style="color: aliceblue; font-weight: bold; text-shadow: 1px 1px 1px black; text-justify: distribute;">
                             "পরম করুণাময়ের নামে"</h6>
                         <div class="maintitle">
-                            <h3>বিশ্ব সাহিত্য প্রাঙ্গণ</h3>
+                            <h3>বিশ্ব সাহিত্য দর্পণ</h3>
                         </div>
 
                         <div class="row mt-0">
                             <div class="col-sm-4 col-4">
                                 <div class="logo w-100" id="displayImage">
-                                    <img src="img/Optimized-prangon-img.png" alt="" class="w-100">
+                                    <img src="img/Optimized-dorpon.png" alt="" class="w-100">
                                 </div>
                             </div>
                             <div class="col-sm-8 col-8">
                                 <div class="mainSlogan">
-                                   <p class="prangonSlogan">"সৃজনশীল সৃষ্টি হোক পরম তৃপ্তির আনন্দ"</p>
+                                    <p>"সৃষ্টিতে চাই শুদ্ধ প্রাণ"</p>
                                 </div>
                             </div>
                         </div>
@@ -100,7 +101,7 @@
                                 <div class="dateSelect">তারিখঃ {{ date }}</div>
                             </div>
                             <div class="col-sm-4 col-4">
-                                <div class="profile w-100" id="displayProfile">
+                                <div class="profile" id="displayProfile">
 
                                 </div>
                             </div>
@@ -126,7 +127,7 @@
                             <div class="col-sm-6 col-6">
                                 <div class="text-center footer">
                                     <p>প্রধান সমন্বয়কারী</p>
-                                    <p>নির্মল কর শেখর</p>
+                                    <p>জিন্নাত রেহানা শাহ</p>
                                 </div>
                             </div>
                         </div>
@@ -151,7 +152,7 @@
                                 <input type="text" placeholder="তারিখ লিখুন" v-model="date">
                             </label>
                             <label for="profile">ছবি আপলোড করুন
-                                <input type="file" id="profileInput"  accept="image/png, image/jpeg">
+                                <input type="file" id="profileInput"  accept="image/png, image/jpeg, image/jpg">
                             </label>
                         </form>
                     </div>
